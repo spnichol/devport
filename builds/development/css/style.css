@@ -1,0 +1,119 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.site-navigation ul {
+  background-color: red;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+
+.site-navigation a {
+  background: transparent;
+  transition: all .5s ease;
+  color: white;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: solid;
+  border-color: white;
+  font-family: "amatic sc";
+  border-width: 3px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 2rem;
+  font-family: "amatic sc";
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.site-navigation a {
+  font-color: #5A6FD8;
+}
+.site-navigation a:hover {
+  background-color: #47A8BD;
+  color: white;
+}
+.site-navigation a:active {
+  background-color: red;
+}
+
+@media all and (max-width: 600px) {
+  .site-navigation ul {
+    /**
+     * Full width navigation items
+     */
+    flex-flow: column wrap;
+    padding: 0;
+  }
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+main.home {
+  background-color: #1E3888;
+  background-position: center center;
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  height: 100vh;
+}
+
+div.intro {
+  text-align: right;
+  font-family: "oswald";
+  margin-top: 40vh;
+}
+div.intro h1 {
+  font-size: 7em;
+  color: white;
+  text-transform: uppercase;
+}
+div.intro h2 {
+  font-size: 4em;
+  color: #F5E663;
+}
+div.intro h2 span {
+  color: white;
+}
+
+div.bottomrow {
+  background: url("../images/footerback1.png") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  max-height: 10vh;
+  margin-top: 270px;
+}
+@media (min-width: 801px) {
+  div.bottomrow {
+    height: 350px;
+  }
+}
+@media (max-width: 800px) {
+  div.bottomrow {
+    height: 150px;
+  }
+}
+@media (max-width: 300px) {
+  div.bottomrow {
+    height: 100px;
+  }
+}

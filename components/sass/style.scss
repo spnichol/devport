@@ -1,0 +1,52 @@
+@import "compass";
+@import "nav";
+@import "variables";
+@import "compass/typography/links/link-colors";
+@import "mixins";
+@import "base";
+
+main.home {
+	background-color: $middleblue;
+	 background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+
+
+  height: 100vh;
+
+}
+
+
+
+div.intro {
+	text-align: right;
+	font-family: "oswald";
+	margin-top: 40vh;
+	h1 {
+		font-size: 7em;
+		color: white;
+		text-transform: uppercase;
+}
+	h2 {
+		font-size: 4em;
+		color: $cornyellow;
+			span {
+				color: white;
+			}
+	}
+
+}
+
+div.bottomrow {
+	@include backImage('../images/footerback1.png');
+	max-height: 10vh;
+	margin-top: 270px;
+
+}

@@ -1,0 +1,58 @@
+@import "compass";
+@import "variables";
+@import "mixins";
+@import "base";
+
+
+
+.site-navigation ul {
+  background-color: red;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+
+ 
+}
+
+.site-navigation a {
+
+		@include custbut();  		
+		display: inline-block;
+ 		text-decoration: none;
+  		text-align: center;
+  	    padding: 2rem;
+  		font-family: $amatic;
+  		font-size: 30px;
+  		font-weight: 700;
+  		margin-left: 20px;
+  		margin-top: 10px;
+
+  	}
+
+ .site-navigation {
+ 	a {
+ 		font-color: $whitepastel;
+ 		&:hover {
+ 			background-color: $babyblue;
+ 			color: white;
+ 		}
+ 		&:active {
+ 			background-color: red;
+ 		}
+ 	}
+ }
+
+
+
+@media all and (max-width: 600px) {
+  .site-navigation ul {
+    /**
+     * Full width navigation items
+     */
+    flex-flow: column wrap;
+    padding: 0;
+  }
+}
